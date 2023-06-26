@@ -65,6 +65,7 @@ body {
   visibility: visible;
   border-radius: 8px;
   opacity: 1;
+  background-color: rgba(0, 255, 247, 0.5);
 }
 
 .main-image img {
@@ -74,7 +75,7 @@ body {
 }
 
 .image-container .sub-image {
-  
+  transition: all 263ms ease-in;
   position: absolute;
   top: 0;
   left: 0;
@@ -84,7 +85,7 @@ body {
   width: 23rem;
   height: 23rem;
   z-index: 1;
-  background-color: hsla(178, 100%, 50%, 0.472);
+
   visibility: hidden;
 }
 
