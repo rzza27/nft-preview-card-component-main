@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+:root {
+  /* PRIMARY COLOR */
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+
+  /* NEUTRAL COLOR */
+  --col-main-bg: hsl(217, 54%, 11%);
+  --col-card-bg: hsl(216, 50%, 16%);
+  --col-line: hsl(215, 32%, 27%);
+  --col-white: hsl(0, 0%, 100%);
+
+  /* FONT */
+  --outfit: "Outfit", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--col-main-bg);
+  font-family: var(--outfit);
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+}
+
+.nft-detail {
+  background-color: var(--col-card-bg);
+  width: 27rem;
+  height: 44rem;
+  padding: 2rem;
+  border-radius: 13px;
+  box-shadow: 0px 18px 9px 11px hsl(217, 57%, 9%),0px 20px 18px 28px hsl(217, 55%, 10%);
+}
+
+.nft-detail img {
+  width: 23rem;
+  height: 23rem;
+  border-radius: 8px;
+}
+
+.nft-detail h1 {
+  color: var(--col-white);
+  font-size: 1.8rem;
+  margin: 1rem 0;
+}
+
+.nft-detail p {
+  font-size: 1.3rem;
+  color: var(--soft-blue);
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+}
+
+ul .text-blue {
+  color: var(--cyan);
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  color: var(--soft-blue);
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+  align-items: center;
+}
+
+li .logo {
+    margin-right: 5px;
+}
+
+li .clock-logo {
+  width: 1.5rem;
+  height: 1.5rem;
+  transform: translateY(2px);
+}
+
+li .eth-logo {
+  height: 1.6rem;
+  width: 1rem;
+  transform: translateY(2px);
+}
+
+li {
+  list-style: none;
+}
+
+.eth-detail p {
+  display: block;
+}
+
+.line {
+  border-top: 1px solid var(--col-line);
+  margin-bottom: 1.5rem;
+}
+
+.creator-detail {
+  display: flex;
+  height: min-content;
+  align-items: center;
+}
+
+.creator-detail img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  outline: 1px solid var(--col-white);
+  margin-right: 1.5rem;
+}
+
+.creator-detail p {
+  margin: 0;
+}
+
+.creator-detail .text-white {
+  color: var(--col-white);
+}
