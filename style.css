@@ -48,19 +48,55 @@ body {
   height: 44rem;
   padding: 2rem;
   border-radius: 13px;
-  box-shadow: 0px 18px 9px 11px hsl(217, 57%, 9%),0px 20px 18px 28px hsl(217, 55%, 10%);
+  box-shadow: 0px 18px 9px 11px hsl(217, 57%, 9%),
+    0px 20px 18px 28px hsl(217, 55%, 10%);
 }
 
-.nft-detail img {
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.image-container:hover .sub-image {
+  visibility: visible;
+  border-radius: 8px;
+  opacity: 1;
+}
+
+.main-image img {
   width: 23rem;
   height: 23rem;
   border-radius: 8px;
+}
+
+.image-container .sub-image {
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 23rem;
+  height: 23rem;
+  z-index: 1;
+  background-color: hsla(178, 100%, 50%, 0.472);
+  visibility: hidden;
 }
 
 .nft-detail h1 {
   color: var(--col-white);
   font-size: 1.8rem;
   margin: 1rem 0;
+}
+
+.nft-detail h1:hover {
+  cursor: pointer;
+  color: var(--cyan);
 }
 
 .nft-detail p {
@@ -84,7 +120,7 @@ ul {
 }
 
 li .logo {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
 li .clock-logo {
@@ -132,4 +168,9 @@ li {
 
 .creator-detail .text-white {
   color: var(--col-white);
+}
+
+.creator-detail .text-white:hover {
+  cursor: pointer;
+  color: var(--cyan);
 }
